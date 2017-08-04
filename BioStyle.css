@@ -1,0 +1,31 @@
+.jumbotron {
+    background-color: blue;
+}
+
+h1{ 
+	margin-left: 15px;
+ }
+
+ h2{
+ 	text-decoration: underline;
+ }
+
+ img{
+ 	
+ 	margin-left: 50px;
+ 	display: black;
+ }
+
+
+    p, li {
+        color: green;
+        font-size: 24px;
+        font-family: cursive;
+    }
+
+    #div1 {
+ background-color: green;
+}
+    .class1 {
+     background-color: pink;    
+ }
