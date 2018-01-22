@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 mongoose.Promise = global.Promise;
 let app = express();
 
-const PRODUCTION_KEY = 'mongodb://heroku_885f0zbz:3r00uu2tqa8tet94d69h9qm06f@ds127034.mlab.com:27034/heroku_885f0zbz';
+const PRODUCTION_KEY = 'mongodb://heroku_6v6mxzjq:emsrlmo216lvfd2aaqgo0gj7fi@ds111258.mlab.com:11258/heroku_6v6mxzjq';
 const DEV_KEY = 'mongodb://localhost/newyorktimesdb';
 
 mongoose.connect(PRODUCTION_KEY);
