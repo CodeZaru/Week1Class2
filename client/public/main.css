@@ -43,6 +43,15 @@
     padding-right: 10px;
 }
 
+.my-jumbotron {
+    height: 400px;
+    background-image: url('./img/jumbo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 @media screen and (max-width: 800px) {
     .article-container {
         flex-direction: column;

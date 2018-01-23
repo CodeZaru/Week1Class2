@@ -38,7 +38,7 @@ class Main extends Component {
         event.preventDefault();
 
         if (this.state.searchTerm === '') {
-            // alert('An empty search gets you nothin');
+            // alert('Add search term to search field');
             this.getValidationState();
         } else {
             API.NYTsearch(this.state).then(res => {
