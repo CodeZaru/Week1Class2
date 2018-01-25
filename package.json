@@ -16,7 +16,7 @@
 		"react",
 		"node"
 	],
-	"author": "KevinSullivan",
+	"author": "CodeZaru",
 	"license": "ISC",
 	"dependencies": {
 		"axios": "^0.16.2",

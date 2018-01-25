@@ -28,5 +28,13 @@ module.exports = {
     },
     destroy: function(req, res) {
         Save.findOneAndRemove({'_id': req.params.articleId}).then(removed => res.json(removed)).catch(err => console.log(err));
+    },
+    findById: function(req, res) {
+        Save.findById({'_id': req.params.articleId}).then(if(true){
+                        
+                        document.getElementById('mydiv').style.backgroundColor="green";
+                        else
+                        document.getElementById('mydiv').style.backgroundColor="red";
+                     }).catch(err => console.log(err));
     }
 };

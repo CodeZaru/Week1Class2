@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const BASE_URL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json';
+
 const API_KEY = '2c7a50b6ac5f44b998ec58784a9f3c18';
 
 const API = {
@@ -32,7 +33,11 @@ const API = {
     },
     removeSavedArticle: function(articleId) {
         return axios.delete(`/api/savedarticles/${articleId}`);
+    },
+    findById: function(articleId) {
+        return axios.get('/api/savedarticles');
     }
+    
 }
 
 export default API;

@@ -9,10 +9,21 @@ const PORT = process.env.PORT || 3001;
 mongoose.Promise = global.Promise;
 let app = express();
 
-const PRODUCTION_KEY = 'mongodb://heroku_6v6mxzjq:emsrlmo216lvfd2aaqgo0gj7fi@ds111258.mlab.com:11258/heroku_6v6mxzjq';
-const DEV_KEY = 'mongodb://localhost/newyorktimesdb';
+////KS torikeshi -start -for local
+//const PRODUCTION_KEY = 'mongodb://heroku_885f0zbz:3r00uu2tqa8tet94d69h9qm06f@ds127034.mlab.com:27034/heroku_885f0zbz';
+////KS torikeshi -end -for local
 
-mongoose.connect(PRODUCTION_KEY);
+const DEV_KEY = 'mongodb://localhost/saveSchema';
+
+////KS torikeshi start for local
+//mongoose.connect(DEV_KEY);
+////KS torikeshi -end -for local
+
+//KS-naoshi -start
+mongoose.connect("mongodb://localhost/saveSchema", {
+  useMongoClient: true
+});
+//KS-naoshi -end
 
 let db = mongoose.connection;
 
